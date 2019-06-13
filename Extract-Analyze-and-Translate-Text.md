@@ -1,4 +1,12 @@
 # Extract, Analyze, and Translate Text from Images with the Cloud ML APIs
+- 회고
+  - 이번 세션을 통해 구글에서 제공하는 텍스트 관련 API들을 간단하게나마 사용해보았다. 생각보다 사용방법이 간단하고, REST API 형태로 제공하기때문에 이를 사용해서 메뉴판 번역등 소규모 프로젝트를 방학 때 진행해 볼 생각이다.
+  - 이번 세션을 통해 새롭게 알게 된 것은 아래와 같다.   
+        - [jq](https://www.lesstif.com/pages/viewpage.action?pageId=42074200)   
+        - [sed](https://hyunkie.tistory.com/51)   
+        - [Googel Transliation API](https://cloud.google.com/translate/docs)   
+        - [Text Dection, OCR](https://cloud.google.com/vision/docs/ocr)   
+        - [Natural Language](https://cloud.google.com/natural-language/)   
 
 - 이번 세션에서는 구글 클라우드에서 이미지에서 텍스트를 추출하고, 해당 텍스트를 번역 및 분석하는 작업에 대해 학습한다.
 - TEXT_DETECTION에 관한 보다 자세한 사항은 [여기](https://cloud.google.com/vision/docs/ocr)를 참고
