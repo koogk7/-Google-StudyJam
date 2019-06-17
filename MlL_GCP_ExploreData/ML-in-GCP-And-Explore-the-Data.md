@@ -79,16 +79,16 @@ fi
 ```python
 # Create SQL query using natality data after the year 2000
 query = """
-SELECT
-weight_pounds,
-is_male,
-mother_age,
-plurality,
-gestation_weeks,
-ABS(FARM_FINGERPRINT(CONCAT(CAST(YEAR AS STRING), CAST(month AS STRING)))) AS hashmonth 
-FROM
-publicdata.samples.natality
-WHERE year > 2000
+  SELECT
+  	weight_pounds,
+    is_male,
+    mother_age,
+    plurality,
+    gestation_weeks,
+  	ABS(FARM_FINGERPRINT(CONCAT(CAST(YEAR AS STRING), CAST(month AS STRING)))) AS hashmonth 
+  FROM
+	  publicdata.samples.natality
+  WHERE year > 2000
 """
 # CAST(YEAR AS STRING) : year 컬럼값을 문자열로 변환
 # CONCAT(A, B) : A,B 두 스트링을 하나로 합침
@@ -121,16 +121,16 @@ This is important to ensure that we have enough examples of each data value, and
 ```python
 # COUNT(1) 은 null 값이 포함되어 있지 않은 row의 수
 query = '''
-SELECT
-is_male,
-COUNT(1) AS num_babies,
-AVG(weight_pounds) AS avg_wt
-FROM
-publicdata.samples.natality
-WHERE
-year > 2000
-GROUP BY
-is_male
+  SELECT
+ 	 is_male,
+  	COUNT(1) AS num_babies,
+  	AVG(weight_pounds) AS avg_wt
+  FROM
+	  publicdata.samples.natality
+  WHERE
+  	year > 2000
+  GROUP BY
+	  is_male
 '''
 df = bigquery.Client().query(query + " LIMIT 100").to_dataframe()
 df.head()
@@ -147,16 +147,16 @@ Which factors seem to play a part in the baby's weight?
 # 특정 컬름을 기준으로 그룹핑하여 전체 row 수와 타켓변수의 평균을 구하는 함수
 def get_disinct_values(column_name):
 	query = '''
-SELECT
-	{0},
-	COUNT (1) AS num_babies,
-	AVG(weight_pounds) AS avg_wt
-FROM
-	publicdata.samples.natality
-WHERE
-	year > 2000
-GROUP BY
-	{0}
+  SELECT
+    {0},
+    COUNT (1) AS num_babies,
+    AVG(weight_pounds) AS avg_wt
+  FROM
+    publicdata.samples.natality
+  WHERE
+    year > 2000
+  GROUP BY
+    {0}
 '''.format(column_name)
 	return bq.Client().query(query).result().to_dataframe()	
 
