@@ -7,7 +7,7 @@
 
 - [API Introduction](https://github.com/koogk7/-Google-StudyJam/blob/master/API-Introduction.md)
 - [Extract, Analyze, and Translate Text from Images with the Cloud ML APIs](https://github.com/koogk7/-Google-StudyJam/blob/master/Extract-Analyze-and-Translate-Text.md)
-- [Classify Text into Categories with the Natural Language API](https://github.com/koogk7/-Google-StudyJam/blob/master/qwiklabs_%20Classify%20Text%20into%20Categories%20with%20the%20Natural%20Language%20API.md
+- [Classify Text into Categories with the Natural Language API](https://github.com/koogk7/-Google-StudyJam/blob/master/qwiklabs_%20Classify%20Text%20into%20Categories%20with%20the%20Natural%20Language%20API.md)
 
 [COURSER](https://www.coursera.org/) (일정 끝난 후 꼭 구독취소!)
 - [Week1. ML in GCP and Explore the Data](https://github.com/koogk7/-Google-StudyJam/blob/master/MlL_GCP_ExploreData/ML-in-GCP-And-Explore-the-Data.md)
