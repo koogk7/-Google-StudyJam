@@ -24,7 +24,7 @@
       1. 모델을 학습 시키는 것
       2. 모델을 평가하는 것
       3. 예측 결과를 뽑아내 보는 것
-  - ![image-20190624152802632](/Users/iseungcheon/Library/Application Support/typora-user-images/image-20190624152802632.png)
+  - ![image-20190624152802632](https://i.ibb.co/184m47j/image-20190624152802632.png)
 
 - **Wide and Deep**
 
@@ -154,6 +154,6 @@
 
 - wide는 강의자료로 대신한다.
 
-  - ![image-20190624153904374](/Users/iseungcheon/Library/Application Support/typora-user-images/image-20190624153904374.png)
+  - <a href="https://ibb.co/XZC6Wp6"><img src="https://i.ibb.co/zh4CmbC/image.png" alt="image" border="0"></a>
 
-  - ![image-20190624153919955](/Users/iseungcheon/Library/Application Support/typora-user-images/image-20190624153919955.png)
+  - <a href="https://ibb.co/YTSWDTS"><img src="https://i.ibb.co/M5Hh85H/image.png" alt="image" border="0"></a>
