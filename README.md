@@ -11,3 +11,4 @@
 
 [COURSER](https://www.coursera.org/) (일정 끝난 후 꼭 구독취소!)
 - [Week1. ML in GCP and Explore the Data](https://github.com/koogk7/-Google-StudyJam/blob/master/MlL_GCP_ExploreData/ML-in-GCP-And-Explore-the-Data.md)
+- [Week2. Create Model](https://github.com/koogk7/-Google-StudyJam/blob/master/Week2%20Create%20Model.md)
